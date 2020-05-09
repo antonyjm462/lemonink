@@ -1,0 +1,43 @@
+<main>
+    <!-- <app-navbar></app-navbar> -->
+
+    <section id="headinfo">
+        <div class="row container">
+            <div class="col-md-6 order-md-1 order-2">
+                <div class="jumbotron bg-transparent justify-content-center ml-5">
+                    <p><a class="display-4"> Simple. Elegant. Awesome. <span class="badge badge-secondary">New</span> </a></p>
+                    <p class="lead"> Made to Share Knowledge And Help People.</p>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-2 order-1">
+                <i class="fas fa-lemon picicon ml-5 mr-5"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <div class="container">
+            <div class="row mt-sm-4 mt-md-0">
+                <div class="col-sm-12 col-md-8 text-sm-center text-md-left">
+                    <h1>{{heading}}</h1>
+                    <p class="lead">{{content}}</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h3 class="mb-4"> Posts </h3>
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" (click)="GettingStarted()"> Getting Started </a>
+                        </li>
+                        <li class="nav-item" *ngFor="let blog of blogs">
+                            <a class="nav-link" (click)="Open(blog.key)">{{blog.key}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <app-footer></app-footer> -->
+</main>
