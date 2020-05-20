@@ -1,3 +1,4 @@
+import { DataService } from './../../../services/data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dev.component.scss']
 })
 export class DevComponent implements OnInit {
+  devs: { name: string; position: string; img: string; }[];
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.devs = this.data.dev;
   }
 
 }

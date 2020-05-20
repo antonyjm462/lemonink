@@ -6,19 +6,14 @@
     <div id="Project-middle">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <p class="text-center overview-head" style="font-size: 20px;"><i class="fab fa-get-pocket"></i>&nbsp; PocketDB</p>
-                    <p class="overview-content">Angular Flat-file Db which can be used for storing lesser information and acessing it faster.</p><button class="btn btn-outline-link btn-block slide-btn" type="button"><i class="icon ion-ios-plus-outline" style="font-size: 30px;"></i></button></div>
-                <div class="col between-col">
-                    <p class="text-center overview-head"><i class="fa fa-map-o"></i><strong>&nbsp;</strong>Mapo</p>
-                    <p class="overview-content">ML based app which help to plot the entire college with ease and AR for locating venues in college fest</p><button class="btn btn-outline-link btn-block slide-btn" type="button"><i class="icon ion-ios-plus-outline" style="font-size: 30px;"></i></button></div>
-                <div class="col">
-                    <p class="text-center overview-head"><i class="la la-sort-amount-asc"></i>&nbsp;Stockify</p>
-                    <p class="overview-content">A Machine Learning Web Application for Smart Stock Purchase and Provide a dashboard for each user to save his preferences.</p><button class="btn btn-outline-link btn-block slide-btn" type="button"><i class="icon ion-ios-plus-outline" style="font-size: 30px;"></i></button></div>
+                <div class="col" *ngFor="let project of projects">
+                    <p class="text-center overview-head"><i class="{{project.icon}}"></i>&nbsp; {{project.name}}</p>
+                    <p class="overview-content">{{project.content}}</p><button (click)="load(project)" class="btn btn-outline-link btn-block slide-btn" type="button"><i class="icon ion-ios-plus-outline" style="font-size: 30px;"></i></button>
+                </div>
             </div>
         </div>
     </div>
     <div id="project-bottom">
-        <app-item></app-item>
+        <app-item [project]="project"></app-item>
     </div>
 </section>

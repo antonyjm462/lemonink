@@ -4,17 +4,17 @@
             <div class="row">
                 <div class="col">
                     <p class="project-head">Software</p>
-                    <p class="project-content">Python,Django,etc</p>
+                    <p class="project-content">{{project.softwares}}</p>
                 </div>
                 <div class="col">
                     <p class="project-head">Usage</p>
-                    <p class="project-content">How to use</p>
+                    <p class="project-content">{{project.use}}</p>
                 </div>
             </div>
         </div>
         <div class="col project-details">
-            <p class="overview-head" style="font-size: 20px;"><strong>Stockify</strong></p>
-            <p class="overview-content">Front End using Django Python Framework, Back end using Python and database used in SQLite<br></p>
+            <p class="overview-head" style="font-size: 20px;"><strong>{{project.name}}</strong></p>
+            <p class="overview-content">{{project.more}}<br></p>
         </div>
     </div>
 </div>

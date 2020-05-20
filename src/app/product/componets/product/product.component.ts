@@ -1,3 +1,4 @@
+import { DataService } from './../../../services/data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
+  projects: any;
+  project: any;
 
-  constructor() { }
+  constructor(private data: DataService) { 
+    this.projects = this.data.projects;
+    console.log(this.projects)
+    this.project = this.projects[0];
+  }
 
   ngOnInit() {
+  }
+
+  load(project){
+    this.project = project;
   }
 
 }

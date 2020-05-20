@@ -2,14 +2,20 @@
     <div>
         <app-navbar></app-navbar>
     </div>
-    <h2 class="text-center section-head">Pateron</h2>
+    <h2 class="text-center section-head">Paterons</h2>
     <div id="about-middle">
         <div class="container">
             <div class="row">
-                <div class="col-3 text-center about-img"><img class="about-img" src="assets/img/me.png"></div>
-                <div class="col-9">
-                    <p class="Member-head">Developer</p>
-                    <p class="Member-content">Hello , I am Antony.<br>I Started this Studio for Young Aspiring Developers who need help</p>
+                <div class="col-md-4 col-sm-12" *ngFor="let dev of devs">
+                    <div class="row">
+                        <div class="col-12 align-content-center">
+                            <img class="about-img" src="assets/img/{{dev.img}}">
+                        </div>
+                        <div class="col-12">
+                            <p class="Member-head">{{dev.name}}</p>
+                            <p class="Member-content">{{dev.position}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
