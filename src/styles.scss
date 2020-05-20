@@ -1,3 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.section-head {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.overview-head {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.overview-content {
+    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    text-align: center;
+    max-width: 700px;
+}
+
+.col.between-col {
+    border: 1px solid rgba(0, 0, 0, 0.64);
+    border-top: 0;
+    border-bottom: 0;
+}

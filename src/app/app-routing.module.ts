@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CoreComponent } from './core/componets/core/core.component';
-import { BlogComponent } from './blog/componets/blog/blog.component';
 import { AboutComponent } from './about/componets/about/about.component';
 import { ProductComponent } from './product/componets/product/product.component';
+import { DevComponent } from './about/componets/dev/dev.component';
+import { MessageComponent } from './core/componets/message/message.component';
 
 
 
 const routes: Routes = [
   { path: '', component: CoreComponent },
-  { path: 'blog', component: BlogComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'product', component: ProductComponent}
+  { path: 'project', component: ProductComponent},
+  { path: 'pateron', component: DevComponent},
+  { path: 'contact', component: MessageComponent}
 ];
 
 

@@ -1,85 +1,37 @@
-<main>
-    <!-- <app-navbar></app-navbar> -->
-
-    <br><br>
-
-    <div class="container-fluid">
-        <div class="row container">
-            <div class="col-md-6 sm-12 order-md-1 order-2">
-                <div class="jumbotron bg-transparent justify-content-center ml-5">
-                    <p><a class="display-4"> Simple. Elegant. Awesome. </a></p>
-                    <p class="lead"> Made to Share Knowledge And Help People.</p>
-                    <p class="lead">
-                        <a class="btn btn-dark btn-lg" role="button"> Check It</a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 order-md-2 order-1">
-                <i class="fas fa-layer-group picicon ml-5 mr-5"></i>
-            </div>
-        </div>
+<section class="d-flex flex-column justify-content-between" id="Main">
+    <div id="main-top">
+        <app-navbar></app-navbar>
+        <h1 class="text-center" id="main-head">Lemonink</h1>
+        <h2 class="text-center" id="sub-head">Simple. Elegant. Awesome.</h2>
     </div>
-
-    <br><br><br><br>
-
-    <div class="container">
-        <div class="row header-main  justify-content-center">
-            <div class="col-md-6 sm-12 text-center">
-                <i class="fas fa-mobile align-items-center ml-5 picicon"></i>
-            </div>
-            <div class="col-md-6 sm-12 text-center">
-                <h1 class="header-info mr-5 mt-5 mb-5 mx-auto">Developers Studio For Helping Young Developers to Solve Real World Problems And Helping People with Our Community</h1>
-            </div>
-        </div>
+    <div id="main-middle">
+        <img class="icon" src="../../../../assets/icons/logo.svg" alt="logo">
     </div>
-
-    <br><br><br><br>
-
-    <div class="container">
-        <h2 class="text-center section-head">Overview</h2>
-        <div class="container-fluid">
+    <div id="main-bottom">
+        <div class="container">
             <div class="row">
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-ruler-combined overlogo"></i>
-                    <h3 class="info-head">Creative Design</h3>
-                    <p class="info mx-auto">We stay on top of the current trend and always stay ahead of modern design implement.</p>
+                <div class="col">
+                    <p class="text-center" style="font-family: Montserrat, sans-serif;font-weight: 400;font-size: 13px;">Made to Share Knowledge And Help People.</p>
                 </div>
-                <div class="col-md-4 text-center ">
-                    <i class="fas fa-code overlogo"></i>
-                    <h3 class="info-head">Developers</h3>
-                    <p class="info mx-auto">Help Young Developers to attain there Dreams by Starting Here.</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center overview-head" style="font-size: 20px;"><i class="fa fa-desktop"></i>&nbsp; Creative Design</p>
+                    <p class="overview-content">We stay on top of the current trend and always stay ahead of modern design implement.</p>
                 </div>
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-users overlogo"></i>
-                    <h3 class="info-head">People</h3>
-                    <p class="info mx-auto">Making Free Applications For The People.</p>
+                <div class="col between-col">
+                    <p class="text-center overview-head"><i class="fa fa-code"></i><strong>Developers</strong></p>
+                    <p class="overview-content">Help Young Developers to attain there Dreams by Starting Here.</p>
                 </div>
+                <div class="col">
+                    <p class="text-center overview-head"><i class="fa fa-smile-o"></i>&nbsp;<strong>People</strong></p>
+                    <p class="overview-content">Making Free Applications For The People.</p>
+                </div>
+                <div class="col align-self-center"><button class="btn btn-primary btn-block text-center cta-button" type="button">Button</button></div>
+            </div>
+            <div class="row">
+                <div class="col"><button class="btn btn-outline-link btn-block slide-btn" type="button"><i class="icon ion-ios-arrow-down" style="font-size: 30px;"></i></button></div>
             </div>
         </div>
     </div>
-
-    <br><br><br><br>
-
-    <div class="container">
-        <h1 class="section-head"> Project </h1>
-        <div class="row">
-            <div class="col md-4 sm-12 mt-5" *ngFor="let project of projects">
-                <div class="card bg-transparent" style="width: 20rem;">
-                    <div class="card-img-top"><i class={{project.img}}></i></div>
-                    <div class="card-body align-content-center">
-                        <h5 class="card-title">{{project.key}}</h5>
-                        <p class="card-text">{{project.value}}</p>
-                        <a href="#" class="btn btn-primary">
-                            <div class="project"><i class={{project.img}}></i></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- <app-message></app-message>
-<app-footer></app-footer> -->
-
-</main>
+</section>
