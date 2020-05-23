@@ -12,7 +12,7 @@ export class ProductComponent implements OnInit {
 
   constructor(private data: DataService) { 
     this.projects = this.data.projects;
-    console.log(this.projects)
+    console.log(this.projects);
     this.project = this.projects[0];
   }
 

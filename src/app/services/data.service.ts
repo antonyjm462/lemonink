@@ -45,7 +45,43 @@ public dev = [
     name:"Antony J Malakkaran",
     position: "Head Developer",
     img:"me.png"
-  }
+  },
+  {
+    name:"Ajay Krishnan",
+    position: "Developer",
+    img:"dev1.png"
+  },
+  {
+    name:"Abhishek Ajoy Menon",
+    position: "Full Stack Developer",
+    img:"dev2.png"
+  },
+  {
+    name:"Anuraj Thekan",
+    position: "Developer",
+    img:"dev3.png"
+  },
+  {
+    name:"Arjun G Nair",
+    position: " Backend Developer",
+    img:"dev4.png"
+  },
+  {
+    name:"Alan P Geo",
+    position: "Developer",
+    img:"dev5.png"
+  },
+  {
+    name:"Alfred Nelson",
+    position: "Developer",
+    img:"dev6.png"
+  },
+  {
+    name:"Ashwin Mathew",
+    position: "Backend Developer",
+    img:"dev7.png"
+  },
+  
 ]
   constructor() { }
 }

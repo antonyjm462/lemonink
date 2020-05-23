@@ -2,6 +2,7 @@
     width: 100px;
     height: 100px;
     align-items: center;
+    border-radius: 100px;
 }
 
 #Members {
@@ -10,7 +11,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     font-family: Montserrat, sans-serif;
 }
 
@@ -22,4 +23,16 @@
 .Member-content {
     font-size: 20px;
     font-weight: 300;
+}
+
+@media only screen and (max-width: 700px) {
+    #Members {
+        background-image: url("../../../../assets/img/background.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        font-family: Montserrat, sans-serif;
+    }
 }
