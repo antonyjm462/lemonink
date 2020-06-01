@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import emailjs from 'emailjs-com';
 
 import { AppComponent } from './app.component';
 import { CoreComponent } from './core/componets/core/core.component';

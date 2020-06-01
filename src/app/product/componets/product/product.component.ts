@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductComponent implements OnInit {
   projects: any;
   project: any;
-
+  projectshow: boolean = false;
   constructor(private data: DataService) { 
     this.projects = this.data.projects;
     console.log(this.projects);
